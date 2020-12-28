@@ -14,8 +14,11 @@ class SearchBar extends Component {
     return (
       <div>
         <form onSubmit={this.onFormSubmit}>
-          <label htmlFor="search">Search images...</label>
+          <h1>UNSPLASHY</h1>
+          <label htmlFor="search"></label>
           <input
+            placeholder="Search images..."
+            className="searchbar"
             type="text"
             value={this.state.term}
             onChange={(e) => this.setState({ term: e.target.value })}
