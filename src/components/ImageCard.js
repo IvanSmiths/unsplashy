@@ -35,6 +35,7 @@ class ImageCard extends Component {
         <h5>
           Porfolio link:
           <a rel="noreferrer" target="_blank" href={user.portfolio_url}>
+            {' '}
             {user.portfolio_url}
           </a>
         </h5>
