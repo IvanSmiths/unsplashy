@@ -21,7 +21,6 @@ class ImageCard extends Component {
   };
 
   render() {
-    console.log(this.props.image);
     const { alt_description, urls, likes, links, user } = this.props.image;
     return (
       <div
@@ -29,7 +28,7 @@ class ImageCard extends Component {
         style={{ gridRowEnd: `span ${this.state.spans}` }}
       >
         <a rel="noreferrer" target="_blank" href={links.html}>
-          <img ref={this.imageRef} src={urls.regular} alt={alt_description} />{' '}
+          <img ref={this.imageRef} src={urls.thumb} alt={alt_description} />{' '}
         </a>
 
         <h4>Shot by: {user.name}</h4>
